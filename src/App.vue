@@ -1,23 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <epet-header></epet-header>
     <router-view></router-view>
+    <epet-footer></epet-footer>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  import header from './components/header/header.vue'
+  import footer from './components/footer/footer.vue'
+
+  export default {
+    name: 'app',
+    components: {
+      'epet-header': header,
+      'epet-footer': footer
+    }
+  }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
