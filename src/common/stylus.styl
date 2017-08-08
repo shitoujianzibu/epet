@@ -1,0 +1,19 @@
+clear-fix()
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+border-1px($color)
+  position relative
+  border none
+  &:after
+    content ''
+    position absolute
+    bottom 0
+    left 0
+    background $color
+    width 100%
+    height 1px
+    transform scaleY(0.5)

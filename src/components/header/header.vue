@@ -52,7 +52,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 <script>
@@ -62,8 +61,9 @@
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
   .xiazaibaApp
-    position relative
-    z-index 100px
+    position fixed
+    z-index 100
+    background #fff
     .wrapper
       .closebtn
         display inline-block
@@ -81,6 +81,11 @@
         img
           width 100%
   .headerBox
+    position fixed
+    width 100%
+    top 57px
+    background #fff
+    z-index 100
     .topFix
       box-sizing border-box
       width 100%
