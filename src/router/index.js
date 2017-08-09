@@ -5,6 +5,9 @@ import dogFood from '../components/dogFood/dogFood.vue'
 import specialSale from '../components/specialSale/specialSale.vue'
 import newProductVideo from '../components/newProductVideo/newProductVideo.vue'
 import newDogClass from '../components/newDogClass/newDogClass.vue'
+import shopCart from '../components/shopCart/shopCart.vue'
+import about from '../components/about/about.vue'
+import client from '../components/client/client.vue'
 
 Vue.use(Router)
 
@@ -33,6 +36,18 @@ export default new Router({
     {
       path: '/newDogClass',
       component: newDogClass
+    },
+    {
+      path: '/shopCart',
+      component: shopCart
+    },
+    {
+      path: '/about',
+      component: about
+    },
+    {
+      path: '/client',
+      component: client
     }
   ]
 })
