@@ -21,6 +21,7 @@
     z-index 100
     width 100%
     height 55px
+    background #fff
     .clearfix:after
       content: "."
       display: block

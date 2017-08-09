@@ -66,7 +66,7 @@
           <img class="last" src="./more.png" alt="">
         </div>
         <div class="supriceNav">
-          <div class="swiper-container">
+          <div class="box1 swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="./5.jpg" alt="">
@@ -126,8 +126,222 @@
         </div>
       </div>
       <split></split>
-      <div class="hot">
-
+      <div class="hotColumn">
+        <img class="hotPic" src="./8.jpg" alt="">
+        <div class="picWrapper">
+          <img class="left" src="./11.png" alt="">
+          <img class="top" src="./10.jpg" alt="">
+          <img class="bottom" src="./9.jpg" alt="">
+        </div>
+      </div>
+      <split></split>
+      <div class="newVideo">
+        <div class="picWrapper">
+          <img class="hotPic" src="./12.png" alt="">
+          <img class="more" src="./more.png" alt="">
+        </div>
+        <div class="video">
+          <img class="epet" src="./13.png" alt="">
+          <img class="play" src="./play.png" alt="">
+          <div class="foot">
+            <span class="dog">狗冰棍，真凉快</span><span class="cold">#狗狗玩具</span>
+            <span class="count">36477</span>
+            <img class="view" src="./view-black.png" alt="">
+          </div>
+        </div>
+      </div>
+      <split></split>
+      <div class="experience">
+        <div class="picWrapper">
+          <img class="experience" src="./experience.png" alt="">
+          <img class="more" src="./more.png" alt="">
+        </div>
+        <div class="banner">
+          <mt-swipe :auto="4000">
+            <mt-swipe-item>
+              <a href="#">
+                <img src="./14.jpg" alt="">
+              </a>
+            </mt-swipe-item>
+            <mt-swipe-item>
+              <a href="#">
+                <img src="./3.jpg" alt="">
+              </a>
+            </mt-swipe-item>
+            <mt-swipe-item>
+              <a href="#">
+                <img src="./4.jpg" alt="">
+              </a>
+            </mt-swipe-item>
+          </mt-swipe>
+        </div>
+      </div>
+      <split></split>
+      <div class="special">
+        <div class="picWrapper">
+          <img class="hotPic" src="./special.png" alt="">
+        </div>
+      </div>
+      <div class="special1">
+        <div class="head">
+          <span class="title">丝亮3免1</span>
+          <span class="decrease">丝亮3免1</span>
+        </div>
+        <div class="picWrapper">
+          <img class="pic" src="./twodog.jpg" alt="">
+        </div>
+      </div>
+      <div class="special1">
+        <div class="head">
+          <span class="title">丝亮3免1</span>
+          <span class="decrease">丝亮3免1</span>
+        </div>
+        <div class="picWrapper">
+          <img class="pic" src="./twodog.jpg" alt="">
+        </div>
+      </div>
+      <div class="special1">
+        <div class="head">
+          <span class="title">丝亮3免1</span>
+          <span class="decrease">丝亮3免1</span>
+        </div>
+        <div class="picWrapper">
+          <img class="pic" src="./twodog.jpg" alt="">
+        </div>
+      </div>
+      <div class="special1">
+        <div class="head">
+          <span class="title">丝亮3免1</span>
+          <span class="decrease">丝亮3免1</span>
+        </div>
+        <div class="picWrapper">
+          <img class="pic" src="./twodog.jpg" alt="">
+        </div>
+      </div>
+      <div class="special1">
+        <div class="head">
+          <span class="title">丝亮3免1</span>
+          <span class="decrease">丝亮3免1</span>
+        </div>
+        <div class="picWrapper">
+          <img class="pic" src="./twodog.jpg" alt="">
+        </div>
+      </div>
+      <div class="special1">
+        <div class="head">
+          <span class="title">丝亮3免1</span>
+          <span class="decrease">丝亮3免1</span>
+        </div>
+        <div class="picWrapper">
+          <img class="pic" src="./twodog.jpg" alt="">
+        </div>
+      </div>
+      <div class="public">
+        <div class="picWrapper">
+          <img class="public" src="./public.jpg" alt="">
+          <img class="more" src="./know.png" alt="">
+        </div>
+        <div class="bgImg">
+          <div class="wrapper">
+            <p><span>截止今日，TA公益已联合E宠商城和</span><b class="bgW">13</b><span>家品牌</span></p>
+            <p><span>累积捐赠</span><b class="red">8955,455.34</b><span>元</span></p>
+            <p><span>已合作</span><b class="white">7</b><span>家公益组织，举办参与</span><b class="bgW">2</b>
+              <span>场公益活动,助养</span><b class="bgW">32</b><span>位领养人</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="footSponsor">
+        <div class="leftFix">
+          <img src="./sponsor.png" alt="">
+        </div>
+        <div class="banner">
+          <div class="box2 swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="picWrapper">
+                  <img src="./chuncui.jpg" alt="">
+                </div>
+                <span>已捐助￥23452.54</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="picWrapper">
+                  <img src="./annamate.jpg" alt="">
+                </div>
+                <span>已捐助￥23452.54</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="picWrapper">
+                  <img src="./chuncui.jpg" alt="">
+                </div>
+                <span>已捐助￥23452.54</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="picWrapper">
+                  <img src="./annamate.jpg" alt="">
+                </div>
+                <span>已捐助￥23452.54</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="picWrapper">
+                  <img src="./chuncui.jpg" alt="">
+                </div>
+                <span>已捐助￥23452.54</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="picWrapper">
+                  <img src="./annamate.jpg" alt="">
+                </div>
+                <span>已捐助￥23452.54</span>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <split></split>
+      <div class="ratings">
+        <div class="picWrapper">
+          <img class="ratings" src="./ratings.png" alt="">
+          <img class="more" src="./know.png" alt="">
+        </div>
+      </div>
+      <div class="ratingsWrapper">
+        <div class="picWrapper">
+          <img src="./user.jpg" alt="" class="pic">
+          <div class="user">
+            <span class="user">红****w</span>
+            <span class="type">中华田园猫</span>
+          </div>
+          <div class="content">
+            包装完美，没有破漏的情况存在，虽说是跨境运输，但是物流的速度还是比想象中快，最主要的还是正品保证，买得放心吃的安心
+          </div>
+        </div>
+        <div class="picWrapper">
+          <img src="./user.jpg" alt="" class="pic">
+          <span class="user">红****w</span>
+          <span class="type">中华田园猫</span>
+          <div class="content">
+            包装完美，没有破漏的情况存在，虽说是跨境运输，但是物流的速度还是比想象中快，最主要的还是正品保证，买得放心吃的安心
+          </div>
+        </div>
+        <div class="picWrapper">
+          <img src="./user.jpg" alt="" class="pic">
+          <div class="user">
+            <span class="user">红****w</span>
+            <span class="type">中华田园猫</span>
+          </div>
+          <div class="content">
+            包装完美，没有破漏的情况存在，虽说是跨境运输，但是物流的速度还是比想象中快，最主要的还是正品保证，买得放心吃的安心
+          </div>
+        </div>
+        <div class="picWrapper">
+          <img src="./user.jpg" alt="" class="pic">
+          <span class="user">红****w</span>
+          <span class="type">中华田园猫</span>
+          <div class="content">
+            包装完美，没有破漏的情况存在，虽说是跨境运输，但是物流的速度还是比想象中快，最主要的还是正品保证，买得放心吃的安心
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -144,11 +358,17 @@
 export default {
     created () {
       Vue.nextTick(() => {
-        new Swiper('.swiper-container', {
+        new Swiper('.box1', {
           pagination: 'null',
           slidesPerView: 3.5,
           paginationClickable: true,
           spaceBetween: 30
+        })
+        new Swiper('.box2', {
+          pagination: 'null',
+          slidesPerView: 2.5,
+          paginationClickable: true,
+          spaceBetween: 0
         })
       })
     },
@@ -164,13 +384,22 @@ export default {
 .indexBox
   padding-top 141px
   width 100%
-  height 1000px
+  height 3620px
+  /*轮播图*/
   .banner
     width 100%
     height 160px
+    .mint-swipe-indicators
+      .mint-swipe-indicator
+        background #fff
+        opacity 1
+        &.is-active
+          width 16px
+          border-radius 4px
     img
       width 100%
       height 160px
+  /*爆款*/
   .faddish
     width 100%
     height 120px
@@ -179,6 +408,7 @@ export default {
       display inline-block
       .faddish
         width 100%
+  /*中部导航*/
   .middleNav
     clear-fix()
     .wrapper
@@ -195,6 +425,7 @@ export default {
           img
             width 100%
             height 90px
+  /*每日疯抢*/
   .purchase
     margin-bottom 10px
     .top
@@ -245,4 +476,224 @@ export default {
               color: #999
 
 
+  /*热门栏目*/
+  .hotColumn
+    width 100%
+    height 230px
+    clear-fix()
+    .hotPic
+      width 100%
+      height 40px
+    .picWrapper
+      font-size 0
+      vertical-align top
+      .left
+        width 42.6666%
+        height 100%
+        float left
+      .top
+        width 57.3333%
+        height 50%
+      .bottom
+        width 57.3333%
+        height 50%
+  /*潮品视频*/
+  .newVideo
+    .picWrapper
+      width 100%
+      height 53px
+      position relative
+      .hotPic
+        display block
+        width 50%
+        height 100%
+        margin 0 auto
+      .more
+        position absolute
+        right 20px
+        top 7px
+        width 15%
+    .video
+      width 100%
+      position relative
+      .epet
+        width 100%
+      .play
+        width 5%
+        position absolute
+        margin auto
+        top 0
+        left 0
+        bottom 0
+        right 0
+      .foot
+        width 100%
+        height 39px
+        box-sizing border-box
+        padding 10px 15px
+        font-size 12px
+        .dog, .cold
+          float left
+        .cold
+          color #f00
+        .view, .count
+          line-height 19px
+          float right
+        .view
+          margin 4px 4px 0 0
+          width 10px
+          height 9px
+  /*体验馆*/
+  .experience
+    .picWrapper
+      width 100%
+      height 53px
+      position relative
+      .experience
+        display block
+        width 50%
+        height 100%
+        margin 0 auto
+      .more
+        position absolute
+        right 20px
+        top 7px
+        width 15%
+  .special
+    .picWrapper
+      width 100%
+      height 53px
+      position relative
+      .hotPic
+        display block
+        width 50%
+        height 100%
+        margin 0 auto
+    border-1px(#999)
+  .special1
+    .head
+      width 100%
+      height 45px
+      box-sizing border-box
+      padding 10px
+      .title
+        font-size 15px
+      .decrease
+        margin-left 10px
+        font-size 12px
+        color #999
+    .picWrapper
+      width 100%
+      .pic
+        width 100%
+  .public
+    .picWrapper
+      width 100%
+      height 53px
+      position relative
+      .public
+        display block
+        width 50%
+        height 100%
+        margin 0 auto
+      .more
+        position absolute
+        right 20px
+        top 22px
+        width 15%
+    .bgImg
+      width 100%
+      height 140px
+      background url(./bgImg.jpg) 100% 100% no-repeat
+      .wrapper
+        padding-top 30px
+        p
+          font-size 14px
+          font-family 'Microsoft Yahei',-apple-system-font,Helvetica Neue,sans-serif
+          font-weight bolder
+          color #fff
+          text-align center
+          line-height 24px
+        span
+          font-weight bolder
+        .bgW
+          font-weight bolder
+          background #fff
+          border-radius 5px
+          color red
+          padding 0 5px
+          margin 0 5px
+        .white
+          font-weight bolder
+          margin 0 5px
+        .red
+          font-weight bolder
+          color red
+
+  .footSponsor
+    width 100%
+    height 81px
+    .leftFix
+      width 25%
+      height 100%
+      float left
+      border-right 1px solid #e7e7e7
+      box-sizing border-box
+      img
+        width 85%
+        margin 5px 0 0 5px
+    .banner
+      float left
+      height 100%
+      width 75%
+      .swiper-container
+        width 100%
+        height 100%
+        .swiper-wrapper
+          width 100%
+          height 100%
+          .swiper-slide
+            width 20%
+            height 100%
+            text-align center
+            box-sizing border-box
+            border-right 1px solid #e7e7e7
+            span
+              font-size 12px
+              border-top 1px solid #e7e7e7
+              box-sizing border-box
+              padding-top 10px
+            img
+              height 40px
+              padding 3px 0
+
+
+
+  .ratings
+    .picWrapper
+      width 100%
+      height 53px
+      position relative
+      .ratings
+        display block
+        width 50%
+        height 100%
+        margin 0 auto
+      .more
+        position absolute
+        right 20px
+        top 22px
+        width 15%
+  .ratingsWrapper
+    padding-left 10px
+    height 230px
+    width 100%
+    box-sizing border-box
+    .picWrapper
+      width 50%
+      float left
+      box-sizing border-box
+      padding-right 10px
+      .pic
+        width 100%
 </style>
