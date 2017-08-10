@@ -8,6 +8,7 @@ import newDogClass from '../components/newDogClass/newDogClass.vue'
 import shopCart from '../components/shopCart/shopCart.vue'
 import about from '../components/about/about.vue'
 import client from '../components/client/client.vue'
+import login from '../components/login/login.vue'
 
 Vue.use(Router)
 
@@ -48,6 +49,10 @@ export default new Router({
     {
       path: '/client',
       component: client
+    },
+    {
+      path: '/login',
+      component: login
     }
   ]
 })

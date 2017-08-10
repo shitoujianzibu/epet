@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="topWrapper">
+    <div class="topWrapper1">
       <div class="headerTop">
         <div class="personal">
           <router-link to="/homepage">
@@ -155,7 +155,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../../common/stylus.styl"
-.topWrapper
+.topWrapper1
   .headerTop
     border-1px(#999)
     position: relative

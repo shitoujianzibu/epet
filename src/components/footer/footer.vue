@@ -5,7 +5,10 @@
       <li class="index-a"></li>
       <li class="type-a"></li>
       <li class="cart-a"></li>
-      <li class="myepet-a"></li>
+      <router-link to="/login">
+        <li class="myepet-a">
+        </li>
+      </router-link>
     </ul>
   </div>
 </div>

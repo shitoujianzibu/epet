@@ -32,7 +32,7 @@
       }
       // setInterval(leftTimer(2017, 8, 9, 12, 00, 00), 1000))
       setInterval(function () {
-        return leftTimer(2017, 8, 10, 12, 0, 0)
+        return leftTimer(2017, 8, 23, 12, 0, 0)
       }, 1000)
     }
   }
