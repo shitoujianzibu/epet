@@ -1,24 +1,13 @@
 <template>
   <div>
-    <epet-header></epet-header>
       <div class="indexBox" ref="indexBoxWrapper">
         <scroller>
           <div>
             <div class="banner1">
               <mt-swipe :auto="4000">
-                <mt-swipe-item>
+                <mt-swipe-item v-for="imgs in dog.bannerPic">
                   <a href="#">
-                    <img src="./1.png" alt="">
-                  </a>
-                </mt-swipe-item>
-                <mt-swipe-item>
-                  <a href="#">
-                    <img src="./3.jpg" alt="">
-                  </a>
-                </mt-swipe-item>
-                <mt-swipe-item>
-                  <a href="#">
-                    <img src="./4.jpg" alt="">
+                    <img :src="imgs.imgPath" alt="">
                   </a>
                 </mt-swipe-item>
               </mt-swipe>
@@ -37,29 +26,9 @@
             </div>
             <div class="middleNav">
               <ul class="wrapper">
-                <li>
+                <li v-for="midNav in dog.middleNav">
                   <a href="#">
-                    <img src="./2.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./2.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./2.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./2.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./2.png" alt="">
+                    <img :src="midNav.imgPath" alt="">
                   </a>
                 </li>
               </ul>
@@ -159,11 +128,11 @@
             </div>
             <split></split>
             <div class="experience">
-              <div class="picWrapper">
+              <div class="exp-picWrapper">
                 <img class="experience" src="./experience.png" alt="">
                 <img class="more" src="./more.png" alt="">
               </div>
-              <div class="banner">
+              <div class="exp-banner">
                 <mt-swipe :auto="4000">
                   <mt-swipe-item>
                     <a href="#">
@@ -353,7 +322,6 @@
           </div>
         </scroller>
       </div>
-    <epet-footer></epet-footer>
   </div>
 </template>
 
@@ -365,12 +333,14 @@
   Vue.component(Swipe.name, Swipe)
   Vue.component(SwipeItem.name, SwipeItem)
 
-  import header from '../header/header.vue'
-  import footer from '../footer/footer.vue'
   import split from '../spilt/split.vue'
   import countDown from '../countDown/countDown.vue'
 
   export default {
+    data () {
+      return {
+      }
+    },
     created () {
       Vue.nextTick(() => {
         new Swiper('.box1', {
@@ -391,26 +361,15 @@
           paginationClickable: true,
           spaceBetween: 0
         })
-
-        /* setTimeout(() => {
-          this._initscroll()
-        }, 300) */
       })
+      console.log(111)
     },
-    methods: {
-      /* _initscroll () {
-        if (!this.scroll) {
-          this.scroll = new BScroll(this.$refs.indexBoxWrapper, {
-            click: true
-          })
-        } else {
-          this.scroll.refresh()
-        }
-      } */
+    computed: {
+      dog () {
+        return this.$store.getters.dog
+      }
     },
     components: {
-      'epet-header': header,
-      'epet-footer': footer,
       split,
       countDown
     }
@@ -587,7 +546,7 @@
           height 9px
   /*体验馆*/
   .experience
-    .picWrapper
+    .exp-picWrapper
       width 100%
       height 53px
       position relative
@@ -601,6 +560,20 @@
         right 20px
         top 7px
         width 15%
+    .exp-banner
+      width 100%
+      height 160px
+      .mint-swipe
+        .mint-swipe-indicators
+          .mint-swipe-indicator
+            background #fff
+            opacity 1
+            &.is-active
+              width 16px
+              border-radius 4px
+      img
+        width 100%
+        height 160px
   .special
     .picWrapper
       width 100%

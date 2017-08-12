@@ -1,12 +1,24 @@
 <template>
-  <div id="app">
+  <div>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+  import dog from './components/dog/dog.vue'
   export default {
-    name: 'app'
+    created () {
+      this.sendDogAjax()
+    },
+    methods: {
+      sendDogAjax () {
+        // console.log(this.$store)
+        this.$store.dispatch('sendDogAjax')
+      }
+    },
+    components: {
+      dog
+    }
   }
 </script>
 

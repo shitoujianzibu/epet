@@ -1,8 +1,6 @@
 <template>
   <div>
-    <epet-header></epet-header>
     <h1>新汪课堂</h1>
-    <epet-footer></epet-footer>
   </div>
 </template>
 

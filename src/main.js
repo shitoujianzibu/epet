@@ -2,8 +2,10 @@ import Vue from 'vue'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import Mint from 'mint-ui'
 import VueScroller from 'vue-scroller'
-
+// 引入mock数据加载模块
+import './mock/mockServer'
 import App from './App'
+import store from './store/store'
 import router from './router'
 
 Vue.use(VueScroller)
@@ -17,5 +19,8 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: {
+    App
+  },
+  store
 })

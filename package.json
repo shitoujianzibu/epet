@@ -11,13 +11,16 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "babel-plugin-component": "^0.10.0",
     "better-scroll": "^0.4.0",
     "mint-ui": "^2.2.9",
+    "mockjs": "^1.0.1-beta3",
     "vue": "^2.3.3",
     "vue-awesome-swiper": "^2.6.2",
     "vue-m-carousel": "^2.0.0",
-    "vue-router": "^2.6.0"
+    "vue-router": "^2.6.0",
+    "vuex": "^2.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

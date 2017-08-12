@@ -3,9 +3,9 @@
     <div class="topWrapper1">
       <div class="headerTop">
         <div class="personal">
-          <router-link to="/homepage">
+          <a href="javascript:;" @click="back">
             <img src="./personal-bico1.png" alt="">
-          </router-link>
+          </a>
         </div>
         <span>品牌特卖</span>
         <div class="imgtk"></div>
@@ -145,6 +145,11 @@
           this.scroll.refresh()
         }
       })
+    },
+    methods: {
+      back () {
+        this.$router.go(-1)
+      }
     },
     components: {
       split

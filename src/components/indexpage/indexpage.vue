@@ -1,9 +1,10 @@
 <template>
   <div>
-    <h1>狗粮</h1>
+    <epet-header></epet-header>
+    <router-view></router-view>
+    <epet-footer></epet-footer>
   </div>
 </template>
-
 <script>
   import header from '../header/header.vue'
   import footer from '../footer/footer.vue'
@@ -14,8 +15,5 @@
     }
   }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-
 </style>

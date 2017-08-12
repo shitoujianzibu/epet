@@ -8,7 +8,7 @@
         </span>
           <div class="appImg">
             <a href="http://wap.epet.com/download.html?appname=epetmall" style="display: block;">
-              <img src="https://img2.epetbar.com/nowater/2017-07/03/10/211547bb51dd23758f74fb86e9d7aae5.png@!water">
+              <img :src="dog.xiazaiApp">
             </a>
           </div>
         </div>
@@ -26,29 +26,29 @@
           </div>
           <div class="dialog">
             <a href="#">
-              <img src="//static.epetbar.com/static_wap/epetapp/pages/index/images/mydope.png">
+              <img :src="dog.epet_category">
             </a>
           </div>
         </div>
         <div class="tab">
           <div class="tab_item active">
-            <router-link to="/homepage">首页</router-link>
+            <router-link to="/dog/indexpage/homepage">首页</router-link>
             <i class="active"></i>
           </div>
           <div class="tab_item">
-            <router-link to="/dogFood">狗粮</router-link>
+            <router-link to="/dog/indexpage/dogFood">狗粮</router-link>
             <i></i>
           </div>
           <div class="tab_item">
-            <router-link to="/specialSale">特卖</router-link>
+            <router-link to="/dog/indexpage/specialSale">特卖</router-link>
             <i></i>
           </div>
           <div class="tab_item">
-            <router-link to="/newProductVideo">潮品视频</router-link>
+            <router-link to="/dog/indexpage/newProductVideo">潮品视频</router-link>
             <i></i>
           </div>
           <div class="tab_item">
-            <router-link to="/newDogClass">新汪课堂</router-link>
+            <router-link to="/dog/indexpage/newDogClass">新汪课堂</router-link>
             <i></i>
           </div>
         </div>
@@ -58,7 +58,11 @@
 </template>
 <script>
   export default {
-
+    computed: {
+      dog () {
+        return this.$store.getters.dog
+      }
+    }
   }
 </script>
 <style lang="stylus" rel="stylesheet/stylus">

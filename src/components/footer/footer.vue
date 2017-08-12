@@ -2,10 +2,16 @@
 <div>
   <div class="footNav">
     <ul class="clearfix">
-      <li class="index-a"></li>
-      <li class="type-a"></li>
-      <li class="cart-a"></li>
-      <router-link to="/login">
+      <router-link to="/dog/indexpage">
+        <li class="index-a"></li>
+      </router-link>
+      <router-link to="/dog/classify">
+        <li class="type-a"></li>
+      </router-link>
+      <router-link to="/dog/shopcart">
+        <li class="cart-a"></li>
+      </router-link>
+      <router-link to="/dog/login">
         <li class="myepet-a">
         </li>
       </router-link>

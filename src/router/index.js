@@ -9,38 +9,70 @@ import shopCart from '../components/shopCart/shopCart.vue'
 import about from '../components/about/about.vue'
 import client from '../components/client/client.vue'
 import login from '../components/login/login.vue'
+import dog from '../components/dog/dog.vue'
+import indexpage from '../components/indexpage/indexpage.vue'
+import classify from '../components/classify/classify.vue'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      redirect: '/homepage'
+      redirect: '/dog/indexpage/homepage'
     },
     {
-      path: '/homepage',
-      component: homepage
+      path: '/dog',
+      redirect: '/dog/indexpage/homepage'
     },
     {
-      path: '/dogFood',
-      component: dogFood
+      path: '/dog/indexpage',
+      redirect: '/dog/indexpage/homepage'
     },
     {
-      path: '/specialSale',
-      component: specialSale
-    },
-    {
-      path: '/newProductVideo',
-      component: newProductVideo
-    },
-    {
-      path: '/newDogClass',
-      component: newDogClass
-    },
-    {
-      path: '/shopCart',
-      component: shopCart
+      path: '/dog',
+      component: dog,
+      children: [
+        {
+          path: 'indexpage',
+          component: indexpage,
+          children: [
+            {
+              path: 'homepage',
+              component: homepage
+            },
+            {
+              path: 'dogFood',
+              component: dogFood
+            },
+            {
+              path: 'newProductVideo',
+              component: newProductVideo
+            },
+            {
+              path: 'newDogClass',
+              component: newDogClass
+            }
+          ]
+        },
+        {
+          path: '/dog/indexpage/specialSale',
+          component: specialSale
+        },
+        {
+          path: 'classify',
+          component: classify
+        },
+        {
+          path: 'login',
+          component: login
+        },
+        {
+          path: 'shopCart',
+          component: shopCart
+        }
+      ]
     },
     {
       path: '/about',
@@ -49,10 +81,6 @@ export default new Router({
     {
       path: '/client',
       component: client
-    },
-    {
-      path: '/login',
-      component: login
     }
   ]
 })
